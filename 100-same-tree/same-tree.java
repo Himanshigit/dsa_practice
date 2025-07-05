@@ -28,6 +28,6 @@ class Solution {
         if(p.val!=q.val){
             return false;
         }
-        return right1 & left1;
+        return right1 && left1;
     }
 }
