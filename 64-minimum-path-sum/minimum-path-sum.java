@@ -12,7 +12,7 @@ class Solution {
     public int helper(int[][] grid,int a,int b, int[][] dp){
         int n=grid.length;
         int m=grid[0].length;
-        if(a>=n || b>=m) return 10000000;
+        if(a>=n || b>=m) return Integer.MAX_VALUE;
         if(a==n-1 && b==m-1) return grid[a][b];
         if(dp[a][b]!=-1) return dp[a][b];
         int l=helper(grid,a+1,b,dp);
